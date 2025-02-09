@@ -48,7 +48,7 @@ class Library{
                     lm.saveData();
                     break;
                 case 9:
-                    lm.exit();
+                    lm.exit(sc);
                     break;
                 
             }
@@ -284,8 +284,9 @@ class LibraryManagement{
         fw.close();
 
     }
-    void exit()
+    void exit(Scanner sc)
     {
+        sc.close();
         System.exit(0);
     }
 
